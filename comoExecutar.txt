@@ -1,0 +1,27 @@
+# O padrão para compilação a ser utilizado é:
+# g++ *.cpp -o execGrupo2
+
+# O nome do arquivo a ser lido deve ser informado ao programa via teclado;
+
+# Para executar o programa, utilize o seguinte comando:
+# ./execGrupoX <arquivo_entrada> <arquivo_saida> <Opc_Direc> <Opc_Peso_Aresta> <Opc_Peso_Nos>
+
+# Onde:
+# <arquivo_entrada> é o nome do arquivo que contém as informações do grafo,
+# <arquivo_saida> é o arquivo onde será gravado o grafo armazenado na memória;
+
+# OBS: Não é necessário incluir a extensão do arquivo (ex: .txt), apenas o nome do arquivo de entrada e de saída.
+# O arquivo de saída será salvo no diretório output_file. Os parâmetros do grafo são representados por:
+# <Opc_Direc> para indicar se o grafo é direcionado (1) ou não direcionado (0),
+# <Opc_Peso_Aresta> para ponderação das arestas (1 para ponderado, 0 para não ponderado),
+# <Opc_Peso_Nos> para indicar se os nós são ponderados (1) ou não ponderados (0).
+
+# Os arquivos de entrada estão localizados no diretório input_file, divididos em dois subdiretórios para grafos ponderados e não ponderados.
+
+# EXEMPLO DE EXECUÇÃO:
+
+# Compilar o código fonte:
+g++ *.cpp -o execGrupo2
+
+# Executar o programa com os parâmetros desejados:
+./execGrupo2 Grafo_125 saidaGrafo_125 0 1 0
